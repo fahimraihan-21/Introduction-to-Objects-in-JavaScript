@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>JS first class</title>
+
+</head>
+
+<body>
+
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo3"></p>
+    <p id="result"></p>
+
+    <script>
+        // javasceipt object declaration
+        var footbalgame = {
+            playername: "ronaldo",
+            playr_position: "striker",
+            player_ranking: 1,
+            player_country: "portugal"
+        }
+        document.getElementById("demo").innerHTML = footbalgame.playername;
+        document.getElementById("demo1").innerHTML = footbalgame.player_ranking;
+        document.getElementById("demo3").innerHTML = " player name is " + footbalgame.playername + " his postion is" + footbalgame.playr_position + " his is from " + footbalgame.player_country;
+         var value =Math.abs(20);
+         document.write("demo test value : " + value + "<br>");
+          var value = Math.acos(-1);
+            document.write("demo test value : " + value + "<br>");
+         // find maximum number
+         function maximum(){
+            var max=0;
+            var i ;
+            for(i=0;i<arguments.length;i++)
+         {
+if(arguments[i]>max){
+    max =arguments[i];
+}
+         }
+         return max;
+         }
+         document.getElementById("result").innerHTML = maximum(4,5,6,);
+    </script>
+
+</body>
+
+</html>
